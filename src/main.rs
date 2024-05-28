@@ -19,7 +19,7 @@ fn get_articles(url: &str) -> Result<Articles, Box<dyn Error>> {
 }
 
 fn main() {
-    let url = "https://newsapi.org/v2/everything?q=tesla&from=2024-04-28&sortBy=publishedAt&apiKey=5d4fb7c9ae6147f8bb60a2843177a391";
+    let url = "https://newsapi.org/v2/everything?q=tesla&from=2024-04-28&sortBy=X";
     match get_articles(url) {
         Ok(articles) => {
             for article in articles.articles {
